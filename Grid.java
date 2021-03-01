@@ -1,7 +1,7 @@
 package battleship;
 
 public class Grid {
-	private final int gridSize = 2;
+	private final int gridSize = 8;
 	private String[][] grid;
 	
 	public Grid() {}

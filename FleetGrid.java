@@ -4,8 +4,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 
 public class FleetGrid extends Grid {
-//	private final int[] lens = {5, 4, 3, 2, 1};
-	private final int[] lens = {1};
+	private final int[] lens = {5, 4, 3, 2, 1};
 	// battleship, cruiser, submarine, destroyer, frigate
 	private final char[] names = {'b', 'c', 'd', 's', 'f'};
 	private Ship[] ships = new Ship[lens.length];  
