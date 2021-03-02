@@ -38,6 +38,6 @@ public class Coordinate {
 	
 	@Override
 	public String toString() {
-		return "(" + x + ", " + y + "), Hit = " + isHit;
+		return "(" + x + ", " + y + ")";
 	}
 }

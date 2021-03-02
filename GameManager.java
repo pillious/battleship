@@ -20,10 +20,11 @@ public class GameManager {
 	 * 7) end game if p1 has won
 	 */
 	public void start() {
+		boolean isGameOver = false;
 		Player p1 = new Player(false); // real player
 		Player p2 = new Player(true); //robot 
 		
-		for (int i = 0; i < 2; i++) {
+		while (!isGameOver) {
 			Coordinate guess;
 			
 			// player 1's turn
@@ -37,6 +38,7 @@ public class GameManager {
 			p1.printGrids(p2.getGuesses());
 			
 			if (p2.getShipsAlive() == 0) {
+				isGameOver = true;
 				System.out.println("You Win!");
 				break;
 			}
@@ -53,6 +55,7 @@ public class GameManager {
 			p2.printGrids(p1.getGuesses());
 			
 			if (p1.getShipsAlive() == 0) {
+				isGameOver = true;
 				System.out.println("You Lose.");
 				break;
 			}

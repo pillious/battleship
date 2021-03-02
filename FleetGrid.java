@@ -53,7 +53,6 @@ public class FleetGrid extends Grid {
 		for (Ship ship: ships) {
 			for (Coordinate c : ship.getPosition()) {
 				if (g.equals(c)) {
-					System.out.println(true);
 					return true;
 				}
 			}
@@ -79,8 +78,6 @@ public class FleetGrid extends Grid {
 				if (isFound) break;
 			}
 		}
-		
-		System.out.println(c);
 	}
 	
 	/*
@@ -171,7 +168,6 @@ public class FleetGrid extends Grid {
 		
 		// override the grid with "H" & "M" to signify where the opponent has guessed.
 		for (Coordinate c : og) {
-			System.out.println(c);
 			arr[c.getY()][c.getX()] = c.getIsHit() ? "H" : "M";
  		}
 		
